@@ -38,6 +38,7 @@ covidData1 (using CDC, Johns Hopkins)
 |Series_Complete_12PlusPop_Pct|percentage of population over 12 years old fully vaccinated| double|
 
 zipData2 (using Miami Herald)
+|Column Name|Description|Data Type|
 |-|-|-|
 |ZCTA|zip code|int|
 |percent_fullvax_eligible_DOH|percentage of population that are able to be vaccinated (Florida dept. of health)|double|
