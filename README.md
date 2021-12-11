@@ -2,7 +2,7 @@
 #### Samuel Perebikovsky, sampereb@uw.edu
 
 ## Goal
-The purpose of this project is to show how Florida's and specifically the County of Miami-Dade's reporting of COVID-19 data imapcts analysis and the how lack of transparency behind their reporting causes problems on scale ranging from individuals to the entire state. The project is the final assignment for the University of Washington DATA 512 A7. 
+The purpose of this project is to show how Florida's and specifically the County of Miami-Dade's reporting of COVID-19 data imapcts analysis and the how lack of transparency behind their reporting causes problems on scale ranging from individuals to the entire state. We use both qualitative and quantitative analysis to paint a picture of just how messed up COVID data reporting is in Florida. The project is the final assignment for the University of Washington DATA 512 A7. 
 
 
 ## Data Sources
@@ -15,6 +15,7 @@ The purpose of this project is to show how Florida's and specifically the County
 
 ## Data Description
 
+### Quantitative
 
 Here is a description of the 2 final datasets (covidData1, zipData2) after cleaning and processing.
 
@@ -46,11 +47,25 @@ zipData2 (using Miami Herald)
 |percent_fullvax_eligible_herald|percentage of population that are able to be vaccinated (Miami Herald est.)|double|
 |%pop1dose|percent of population with at least one vaccine dose (calculated est.)|double|
 
+- CDC [Dashboard](https://covid.cdc.gov/covid-data-tracker/#county-view)
+
+### Qualitative
+- [Article 1](https://floridapolitics.com/archives/458515-miami-dade-90-vaccination-rate/)
+- [Article 2](https://www.healthline.com/health-news/why-florida-now-has-the-lowest-covid-19-case-rate)
+- [Article 3](https://www.tallahassee.com/story/news/local/state/2021/08/13/floridas-covid-numbers-cases-data-difficult-but-not-impossible-find-heres-how/8099274002/)
+- [Article 4](https://www.wfla.com/community/health/coronavirus/lawsuit-filed-for-return-of-daily-covid-19-reports-in-florida/)
+- [Article 5](https://www.miamiherald.com/news/coronavirus/article254801602.html)
+- [Article 6](https://www.local10.com/news/local/2021/09/22/90-of-miami-dade-vaccinated-its-just-not-true-experts-say/)
+- [Article 7](https://www.clickorlando.com/news/local/2020/11/26/florida-wont-release-covid-19-data-on-thanksgiving/)
+- [Article 8](https://floridapolitics.com/archives/449831-florida-health-reports-impossible-vaccination-rates-withholds-confidential-covid-19-data-dems-say/)
+
+All credit for the articles above should be given to the respective authors, without whom, this analysis would not be complete.
+
 ## Known Issues
 - Much of the data from the Miami Herald are estimates of the true numbers since it was determined that the numbers by the department of health are not at all accurate.
-- There are some blank/missing spots in the data
-
-
+- The Miami Herald article and data are past a paywall so you would need to subscribe or do a free trial to have access to it. However, there is a copy of the article and data in the repository.
+- The qualitative data and articles may be biased.
+- There are some blank/missing spots in the data.
 
 
 ## License and Terms of Use
