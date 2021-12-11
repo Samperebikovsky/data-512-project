@@ -9,30 +9,45 @@ The purpose of this project is to show how Florida's and specifically the County
 - [Kaggle repository of Johns Hopkins University COVID-19 data](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv): Total number of COVID cases by day at the county level.
 - [CDC Masking Mandate by State](https://data.cdc.gov/Policy-Surveillance/U-S-State-and-Territorial-Public-Mask-Mandates-Fro/62d6-pm5i): Mandatory masking mandate by state from the CDC.
 - [The New York Times mask compliance survey data](https://github.com/nytimes/covid-19-data/tree/master/mask-use): Mask compliance data from a NYT survey
-- [CDC Vaccination Data by County](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh/data): Labor force and employment data
+- [CDC Vaccination Data by County](https://data.cdc.gov/Vaccinations/COVID-19-Vaccinations-in-the-United-States-County/8xkx-amqh/data): COVID-19 vaccination status by county from the CDC.
+- [Miami-Dade Vaccinations by Zip Code](https://www.miamiherald.com/news/coronavirus/article254801602.html): COVID-19 vaccinations in Miami-Dade by Zip Code.
 
 
 ## Data Description
 
 
-Here is a description of the final dataset (final_data_testing) after cleaning and processing.
-|Column Name|Description|Data Type|Data Source|
-|-|-|-|-|
-|Year|the year of the data|Kaggle|
-|Month|the month of the data|Kaggle|
-|labor force|the number of people employed and looking for jobs|US Bureau of Labor Statistics|
-|employment|the number of people employed|US Bureau of Labor Statistics|
-|unemployment|the number of people unemployed|US Bureau of Labor Statistics|
-|unemployment rate|the unemployment rate (unemployment/labor force)|US Bureau of Labor Statistics|
-|time|the month end date|calculated from Year and Month|
-|unemployment_diff|the change in unemployment from the previous month|calculated from US Bureau of Labor Statistics|
-|labor_force_diff|the change in labor force from the previous month|calculated from US Bureau of Labor Statistics|
-|covid_monthly_infection_diff|the change in new covid infection in each month|calculated from Kaggle|
+Here is a description of the 2 final datasets (covidData1, zipData2) after cleaning and processing.
 
+covidData1 (using CDC, Johns Hopkins)
+|Column Name|Description|Data Type|
+|-|-|-|
+|Province_State|the state where the data came from (florida)|String|
+|Admin2|the name of the county|String|
+|Date|the date the data was collected|datetime|
+|cases|total number of covid cases up the that date|int|
+|NewCases|the number of covid cases reported that day|int|
+|7dayAvg|the average number of cases reported per day in the last 7 days|double|
+|day_of_week|the day that corresponds to the particular date|String|
+|derivDiff|the rate of change of covid cases (infection rate)|double|
+|7daySum|total number of covid cases reported in the last 7 days|int|
+|FIPS|code corresponding to location in country|int|
+|MMWR_week|morbidity and mortality weekly report|double|
+|Recip_County|name of county that data belongs to|string|
+|Series_Complete_Pop_Pct|The percentage of population that are fully vaccinated|double|
+|Administered_Dose1_Pop_Pct|the percentage of population that has at least 1 dose of vaccine|double|
+|Series_Complete_12PlusPop_Pct|percentage of population over 12 years old fully vaccinated| double|
+
+zipData2 (using Miami Herald)
+|-|-|-|
+|ZCTA|zip code|int|
+|percent_fullvax_eligible_DOH|percentage of population that are able to be vaccinated (Florida dept. of health)|double|
+|percent_fullvax_total_DOH|percentage of population that are fully vaccinated (Florida dept. of health)|double|
+|percent_fullvax_eligible_herald|percentage of population that are able to be vaccinated (Miami Herald est.)|double|
+|%pop1dose|percent of population with at least one vaccine dose (calculated est.)|double|
 
 ## Known Issues
-- My research produced counterintuitive results that unemployment rate and labor force granger caused covid infection rate. That is likely caused by the public policy in the US and a lack of more granular employment data.
-- The imprecision in determining the number of close contacts limited my ability to draw any conclusion regarding the mask effectiveness.
+- Much of the data from the Miami Herald are estimates of the true numbers since it was determined that the numbers by the department of health are not at all accurate.
+- There are some blank/missing spots in the data
 
 
 
