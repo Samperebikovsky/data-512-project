@@ -17,7 +17,7 @@ The purpose of this project is to show how Florida's and specifically the County
 
 ### Quantitative
 
-Here is a description of the 2 final datasets (covidData1, zipData2) after cleaning and processing.
+Here is a description of the 2 final datasets (covidData1.csv, zipData2.csv) after cleaning and processing.
 
 covidData1 (using CDC, Johns Hopkins)
 |Column Name|Description|Data Type|
@@ -67,6 +67,8 @@ All credit for the articles above should be given to the respective authors, wit
 - The qualitative data and articles may be biased.
 - There are some blank/missing spots in the data.
 
+## Process
+To follow the process for this analysis please refer to project_A5_A6.ipynb for a guide on the quantitative side of the analysis. Supplement this with the articles linked above and you will be able to replicate my results and come to a similar conculsion.
 
 ## License and Terms of Use
 - [Kaggle repository of Johns Hopkins University COVID-19 data](https://www.kaggle.com/antgoldbloom/covid19-data-from-john-hopkins-university?select=RAW_us_confirmed_cases.csv) is licnesed under Attribution 4.0 International (CC BY 4.0).
