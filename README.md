@@ -19,7 +19,7 @@ The purpose of this project is to show how Florida's and specifically the County
 
 Here is a description of the 2 final datasets (covidData1.csv, zipData2.csv) after cleaning and processing.
 
-covidData1 (using CDC, Johns Hopkins)
+covidData1: merged data about covid vaccines, cases, and dates all at the county/state level (using CDC, Johns Hopkins)
 |Column Name|Description|Data Type|
 |-|-|-|
 |Province_State|the state where the data came from (florida)|String|
@@ -38,7 +38,7 @@ covidData1 (using CDC, Johns Hopkins)
 |Administered_Dose1_Pop_Pct|the percentage of population that has at least 1 dose of vaccine|double|
 |Series_Complete_12PlusPop_Pct|percentage of population over 12 years old fully vaccinated| double|
 
-zipData2 (using Miami Herald)
+zipData2: data about covid vaccinations at the zip code level (using Miami Herald)
 |Column Name|Description|Data Type|
 |-|-|-|
 |ZCTA|zip code|int|
