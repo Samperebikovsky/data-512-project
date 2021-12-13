@@ -49,6 +49,8 @@ zipData2: data about covid vaccinations at the zip code level (using Miami Heral
 
 - CDC [Dashboard](https://covid.cdc.gov/covid-data-tracker/#county-view)
 
+For information on how the data was cleaned and filtered for this analysis please visit the A5/A6 jupyter notebook.
+
 ### Qualitative
 - [Article 1](https://floridapolitics.com/archives/458515-miami-dade-90-vaccination-rate/)
 - [Article 2](https://www.healthline.com/health-news/why-florida-now-has-the-lowest-covid-19-case-rate)
